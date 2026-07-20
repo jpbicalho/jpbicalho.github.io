@@ -54,10 +54,10 @@
 
         <section class="bg-white/5 backdrop-blur border border-white/10 rounded-xl p-8 max-w-3xl">
             <h2 class="text-2xl font-bold mb-4">Mensagens do banco de dados</h2>
-            <p class="text-slate-400 text-sm mb-6">
-                Os itens abaixo são lidos do SQLite. Adicione novos pelo
-                <a href="/admin/" class="text-indigo-300 underline hover:text-indigo-200">painel admin</a>.
-            </p>
+            <a href="/nova/"
+            class="inline-block mb-6 px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-semibold transition">
+                + Nova mensagem
+            </a>
 
             {% if mensagens %}
                 <ul class="space-y-3">
