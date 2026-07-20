@@ -16,4 +16,5 @@ class CategoriaAdmin(admin.ModelAdmin):
 @admin.register(Mensagem)
 class MensagemAdmin(admin.ModelAdmin):
     list_display = ("titulo", "criada_em")
+    list_filter = ("categoria",)
     search_fields = ("titulo", "conteudo")
